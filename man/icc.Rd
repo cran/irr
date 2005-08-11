@@ -7,13 +7,13 @@ Computes single score or average score ICCs as an index of interrater reliabilit
 \usage{
 icc(ratings, model = c("oneway", "twoway"), 
     type = c("consistency", "agreement"), 
-    k = 1, r0 = 0, conf.level = 0.95)
+    unit = c("single", "average"), r0 = 0, conf.level = 0.95)
 }
 \arguments{
   \item{ratings}{n*m matrix or dataframe, n subjects m raters.}
   \item{model}{a character string specifying if a '"oneway"' model (default) with row effects random, or a '"twoway"' model with column and row effects random should be applied. You can specify just the initial letter.}
   \item{type}{a character string specifying if '"consistency"' (default) or '"agreement"' between raters should be estimated. If a '"oneway"' model is used, only '"consistency"' could be computed. You can specify just the initial letter.}
-  \item{k}{number of ratings for the estimation of average score ICCs. When considering single values k equals 1.}
+  \item{unit}{a character string specifying the unit of analysis: Must be one of '"single"' (default) or '"average"'. You can specify just the initial letter.}
   \item{r0}{specification of the null hypothesis r = r0.}
   \item{conf.level}{confidence level of the interval.}
 }
@@ -22,7 +22,7 @@ Missing data are omitted in a listwise way.
 \crWhen considering which form of ICC is appropriate for an actual set of data, one has take several decisions (Shrout & Fleiss, 1979):
 \cr\cr1. Should only the subjects be considered as random effects ('"oneway"' model) or are subjects and raters randomly chosen from a bigger pool of persons ('"twoway"' model).
 \cr\cr2. If differences in judges' mean ratings are of interest, interrater '"agreement"' instead of '"consistency"' should be computed.
-\cr\cr3. If the unit of analysis is a mean of several ratings, k should be adjusted to the number of averaged ratings. In most cases, however, single values (k=1) are regarded.
+\cr\cr3. If the unit of analysis is a mean of several ratings, unit should be changed to '"average"'. In most cases, however, single values (unit='"single"') are regarded.
 }
 \value{
 A list with class '"icclist"' containing the following components:
@@ -30,7 +30,7 @@ A list with class '"icclist"' containing the following components:
   \item{$raters}{the number of raters.}
   \item{$model}{a character string describing the selected model for the analysis.}
   \item{$type}{a character string describing the selected type of interrater reliability.}
-  \item{$k}{the number of averaged ratings.}
+  \item{$unit}{a character string describing the unit of analysis.}
   \item{$icc.name}{a character string specifying the name of ICC according to McGraw & Wong (1996).}
   \item{$value}{the intraclass correlation coefficient.}
   \item{$r0}{the specified null hypothesis.}

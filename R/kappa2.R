@@ -7,6 +7,10 @@ function(ratings, weight = c("unweighted", "equal", "squared")) {
 	ns <- nrow(ratings)
 	nr <- ncol(ratings)
 
+  if (nr>2) {
+    stop("Number of raters exeeds 2. Try kappam.fleiss or kappam.light.")
+  }
+
 	r1 <- ratings[,1]; r2 <- ratings[,2]
 
 	if (!is.factor(r1)) r1 <- factor(r1)
@@ -23,8 +27,7 @@ function(ratings, weight = c("unweighted", "equal", "squared")) {
 	ttab <- table(r1, r2)
 
 	#Compute weights
-	weighttab <- as.matrix(ttab)
-	nc <- ncol(weighttab)
+	nc <- ncol(ttab)
 
 	if (is.numeric(weight))
 		w <- 1-(weight-min(weight))/(max(weight)-min(weight))
@@ -54,20 +57,13 @@ function(ratings, weight = c("unweighted", "equal", "squared")) {
 	value <- (agreeP - chanceP)/(1 - chanceP)
 
 	#Compute statistics
-	pe <- sum(tm1*tm2)/ns^2
-
-	p.i <- tm1/ns; p.j <- tm2/ns
-
 	w.i <- apply(rep(tm2/ns,nc)*weighttab,2,sum)
 	w.j <- apply(rep(tm1/ns,each=nc)*weighttab,1,sum)
 
-	p.i <- rep(p.i, nc); p.j <- rep(p.j, each=nc)
-	w.i <- rep(w.i, nc); w.j <- rep(w.j, each=nc)
+	var.matrix <- (eij/ns)*(weighttab-outer(w.i,w.j,'+'))^2
 
-	var.matrix <- p.i*p.j*(weighttab-(w.i+w.j))^2
-
-	varkappa <- 1/(ns*(1-pe)^2)*(sum(var.matrix)-pe^2)
-
+  varkappa <- (sum(var.matrix)-chanceP^2)/(ns*(1-chanceP)^2)
+  
 	SEkappa <- sqrt(varkappa)
 	u <- value/SEkappa
 	p.value <- 2 * (1 - pnorm(abs(u)))

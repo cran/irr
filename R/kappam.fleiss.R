@@ -37,17 +37,17 @@ function(ratings, exact = FALSE, detail = FALSE) {
 
   	rtab <- rtab/ns
 
-  	chanceP <- sum(apply(ttab,2,sum)^2)/(ns*nr)^2 - sum(apply(rtab,2,var)*(nr-1)/nr)/( nr-1)
+  	chanceP <- sum(apply(ttab,2,sum)^2)/(ns*nr)^2 - sum(apply(rtab,2,var)*(nr-1)/nr)/(nr-1)
   }
 
  	#Kappa for m raters
  	value <- (agreeP - chanceP)/(1 - chanceP)
 
   if (!exact) {
-  	pj2 <- chanceP
-  	pj3 <- sum(apply(ttab,2,sum)^3)/(ns*nr)^3
-
-  	varkappa <- (2/(ns*nr*(nr-1)))*((pj2-(2*nr-3)*pj2^2+2*(nr-2)*pj3)/(1-pj2)^2)
+    pj <- apply(ttab,2,sum)/(ns*nr)
+    qj <- 1-pj
+    
+    varkappa <- (2/(sum(pj*qj)^2*(ns*nr*(nr-1))))*(sum(pj*qj)^2-sum(pj*qj*(qj-pj)))
   	SEkappa <- sqrt(varkappa)
 
   	u <- value/SEkappa
@@ -58,7 +58,8 @@ function(ratings, exact = FALSE, detail = FALSE) {
     	pjk <- (apply(ttab^2,2,sum)-ns*nr*pj)/(ns*nr*(nr-1)*pj)
 
     	kappaK    <- (pjk-pj)/(1-pj)
-    	varkappaK <- ((1+2*(nr-1)*pj)^2+2*(nr-1)*pj*(1-pj))/(ns*nr*(nr-1)^2*pj*(1-pj))
+
+    	varkappaK <- 2/(ns*nr*(nr-1))
     	SEkappaK  <- sqrt(varkappaK)
 
     	uK <- kappaK/SEkappaK

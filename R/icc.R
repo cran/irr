@@ -1,8 +1,10 @@
 "icc" <-
-function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreement"), k = 1, r0 = 0, conf.level = .95) {
+function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreement"),
+         unit = c("single", "average"), r0 = 0, conf.level = .95) {
 	ratings <- as.matrix(na.omit(ratings))
   model <- match.arg(model)
   type  <- match.arg(type)
+  unit  <- match.arg(unit)
   alpha <- 1-conf.level
 
   ns <- nrow(ratings)
@@ -15,7 +17,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 	MSe <- (SStotal-MSr*(ns-1)-MSc*(nr-1))/((ns-1)*(nr-1))
 
 	#Single Score ICCs
-	if (k == 1) {
+	if (unit == "single") {
 	    if (model=="oneway") {
 			#Asendorpf & Wallbott, S. 245, ICu
 			#Bartko (1966), [3]
@@ -23,7 +25,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 		    icc.name <- "ICC(1)"
 		    coeff  <- (MSr-MSw)/(MSr+(nr-1)*MSw)
 
-		    Fvalue <- MSr/MSw*((1-r0)/(1+(k-1)*r0))
+		    Fvalue <- MSr/MSw*((1-r0)/(1+(nr-1)*r0))
 		    df1    <- ns-1
 		    df2    <- ns*(nr-1)
 		    p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
@@ -43,7 +45,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 		    icc.name <- "ICC(C,1)"
 				coeff  <- (MSr-MSe)/(MSr+(nr-1)*MSe)
 
-			  Fvalue <- MSr/MSe*((1-r0)/(1+(k-1)*r0))
+			  Fvalue <- MSr/MSe*((1-r0)/(1+(nr-1)*r0))
 			  df1    <- ns-1
 			  df2    <- (ns-1)*(nr-1)
 			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
@@ -85,10 +87,10 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 	  }
 	}
 	#Average Score ICCs
-	else {
+	else if (unit == "average") {
 	    if (model=="oneway") {
 			  #Asendorpf & Wallbott, S. 245, Ru
-		    icc.name <- paste("ICC(",k,")",sep="")
+		    icc.name <- paste("ICC(",nr,")",sep="")
 		    coeff  <- (MSr-MSw)/MSr
 
 		    Fvalue <- MSr/MSw*(1-r0)
@@ -105,7 +107,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 	    else if (model=="twoway") {
 			if (type == "consistency") {
 				#Asendorpf & Wallbott, S. 246, Ra
-		    icc.name <- paste("ICC(C,",k,")",sep="")
+		    icc.name <- paste("ICC(C,",nr,")",sep="")
 				coeff  <- (MSr-MSe)/MSr
 
 			  Fvalue <- MSr/MSe*(1-r0)
@@ -120,7 +122,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 			  ubound <- 1-1/FU
 			}
 			else if (type == "agreement") {
-		    icc.name <- paste("ICC(A,",k,")",sep="")
+		    icc.name <- paste("ICC(A,",nr,")",sep="")
 				coeff  <- (MSr-MSe)/(MSr+(MSc-MSe)/ns)
 
 				a <- r0/(ns*(1-r0))
@@ -147,7 +149,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 	}
 
   rval <- structure(list(subjects = ns, raters = nr,
-                         model = model, type = type, k = k,
+                         model = model, type = type, unit = unit,
                          icc.name = icc.name, value = coeff,
                          r0 = r0, Fvalue = Fvalue, df1 = df1, df2 = df2, p.value = p.value,
                          conf.level = conf.level, lbound = lbound, ubound = ubound),

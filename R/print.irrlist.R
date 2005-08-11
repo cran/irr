@@ -13,7 +13,8 @@ function(x, ...)
 	}
   if (!is.null(x$detail)) {
     cat("\n")
-    print(x$detail)
+    if (is.table(x$detail)) print(x$detail)
+    else cat(x$detail,"\n")
   }
   if (!is.null(x$error)) cat("\n ", x$error, "\n", sep="")
 }

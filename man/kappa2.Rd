@@ -2,7 +2,7 @@
 \alias{kappa2}
 \title{Cohen's Kappa and weighted Kappa for two raters}
 \description{
-Computes Cohen's Kappa and weighted Kappa as an index of interrater agreement between 2 raters on categorial (or ordinal) data. Own weights for the various degrees of disagreement could be specified.
+Computes Cohen's Kappa and weighted Kappa as an index of interrater agreement between 2 raters on categorical (or ordinal) data. Own weights for the various degrees of disagreement could be specified.
 }
 \usage{
 kappa2(ratings, weight = c("unweighted", "equal", "squared"))
@@ -31,6 +31,7 @@ A list with class '"irrlist"' containing the following components:
 \references{
 Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20, 37-46.
 \cr\crCohen, J. (1968). Weighted kappa: Nominal scale agreement with provision for scaled disagreement or partial credit. Psychological Bulletin, 70, 213-220.
+\cr\crFleiss, J.L., Cohen, J., & Everitt, B.S. (1969). Large sample standard errors of kappa and weighted kappa. Psychological Bulletin, 72, 323-327.
 }
 \author{Matthias Gamer}
 \seealso{
@@ -47,7 +48,7 @@ kappa2(anxiety[,1:2], (0:5)^2)   # same result with own set of squared weights
 kappa2(anxiety[,1:2], c(0,1,2,4,7,11))
 
 data(diagnoses)
-# Unweighted Kappa for categorial data without a logical order
+# Unweighted Kappa for categorical data without a logical order
 kappa2(diagnoses[,2:3])
 }
 \keyword{univar}

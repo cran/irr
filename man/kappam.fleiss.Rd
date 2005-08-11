@@ -2,7 +2,7 @@
 \alias{kappam.fleiss}
 \title{Fleiss' Kappa for m raters}
 \description{
-Computes Fleiss' Kappa as an index of interrater agreement between m raters on categorial data. Additionally, category-wise Kappas could be computed.
+Computes Fleiss' Kappa as an index of interrater agreement between m raters on categorical data. Additionally, category-wise Kappas could be computed.
 }
 \usage{
 kappam.fleiss(ratings, exact = FALSE, detail = FALSE)
@@ -32,6 +32,7 @@ A list with class '"irrlist"' containing the following components:
 \references{
 Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.
 \cr\crFleiss, J.L. (1971). Measuring nominal scale agreement among many raters. Psychological Bulletin, 76, 378-382.
+\cr\crFleiss, J.L., Levin, B., & Paik, M.C. (2003). Statistical Methods for Rates and Proportions, 3rd Edition. New York: John Wiley & Sons.
 }
 \author{Matthias Gamer}
 \seealso{

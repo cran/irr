@@ -1,7 +1,7 @@
 "print.icclist" <-
 function(x, ...)
 {
-  icc.title <- ifelse(x$k==1, "Single Score Intraclass Correlation", "Average Score Intraclass Correlation")
+  icc.title <- ifelse(x$unit=="single", "Single Score Intraclass Correlation", "Average Score Intraclass Correlation")
 	cat(paste(" ",icc.title,"\n\n",sep=""))
 	cat(paste("   Model:", x$model, "\n"))
 	cat(paste("   Type :", x$type, "\n\n"))

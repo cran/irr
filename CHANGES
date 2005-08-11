@@ -1,0 +1,13 @@
+Changes in 0.x releases of irr:
+=======
+ 0.6:  - Corrected computation of the large sample standard error of the 
+         weighted kappa coefficient for two raters and the Fleiss' Kappa for
+         m raters.
+         (Thanks to Tatsuo Kagimura for this hint)
+       - Corrected output and documentation of the intraclass correlation 
+         coefficient's (ICC) estimate of average score ICCs.
+         (Thanks to Jonathan Williams for raising this issue)
+       - New functions: agree (computation of simple and extended percentage 
+         agreement among several raters), maxwell (Maxwell's RE-coefficient
+         for binary scales), iota (interrater agreement for multivariate
+         observations)

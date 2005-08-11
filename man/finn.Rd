@@ -29,7 +29,7 @@ A list with class '"irrlist"' containing the following components:
   \item{$p.value}{the p-value for the test.}
 }
 \references{
-Finn, R.H. (1970). A note on estimating the reliability of categorial data. Educational and Psychological Measurement, 30, 71-76.
+Finn, R.H. (1970). A note on estimating the reliability of categorical data. Educational and Psychological Measurement, 30, 71-76.
 }
 \author{Matthias Gamer}
 \seealso{

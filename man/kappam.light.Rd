@@ -2,7 +2,7 @@
 \alias{kappam.light}
 \title{Light's Kappa for m raters}
 \description{
-Computes Light's Kappa as an index of interrater agreement between m raters on categorial data.
+Computes Light's Kappa as an index of interrater agreement between m raters on categorical data.
 }
 \usage{
 kappam.light(ratings)
