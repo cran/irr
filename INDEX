@@ -5,10 +5,9 @@ diagnoses               Psychiatric diagnoses provided by different
 finn                    Finn coefficient for oneway and twoway models
 icc                     Intraclass correlation coefficient (ICC) for
                         oneway and twoway models
-iota                    Iota coefficient of interrater agreement for 
-                        multivariate observations
-kappa2                  Cohen's Kappa and weighted Kappa for two
-                        raters
+iota                    iota coefficient for the interrater agreement
+                        of multivariate observations
+kappa2                  Cohen's Kappa and weighted Kappa for two raters
 kappam.fleiss           Fleiss' Kappa for m raters
 kappam.light            Light's Kappa for m raters
 kendall                 Kendall's coefficient of concordance W

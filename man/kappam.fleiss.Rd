@@ -41,10 +41,10 @@ Conger, A.J. (1980). Integration and generalisation of Kappas for multiple rater
 }
 \examples{
 data(diagnoses)
-kappam.fleiss(diagnoses)               # Fleiss Kappa
+kappam.fleiss(diagnoses)               # Fleiss' Kappa
 kappam.fleiss(diagnoses, exact=TRUE)   # Exact Kappa
-kappam.fleiss(diagnoses, detail=TRUE)  # Fleiss Kappa and category-wise Kappa
+kappam.fleiss(diagnoses, detail=TRUE)  # Fleiss' and category-wise Kappa
 
-kappam.fleiss(diagnoses[,1:4])         # Fleiss Kappa of raters 1 to 4
+kappam.fleiss(diagnoses[,1:4])         # Fleiss' Kappa of raters 1 to 4
 }
 \keyword{univar}

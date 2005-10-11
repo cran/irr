@@ -1,6 +1,7 @@
 Changes in 0.x releases of irr:
 =======
- 0.6:  - Corrected computation of the large sample standard error of the 
+ 0.61: - Calls to deprecated functions were removed
+ 0.6:  - Corrected computation of the large sample standard error of the
          weighted kappa coefficient for two raters and the Fleiss' Kappa for
          m raters.
          (Thanks to Tatsuo Kagimura for this hint)

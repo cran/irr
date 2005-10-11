@@ -5,7 +5,8 @@
 Computes iota as an index of interrater agreement of quantitative or nominal multivariate observations.
 }
 \usage{
-iota(ratings, scaledata = c("quantitative","nominal"), standardize = FALSE)
+iota(ratings, scaledata = c("quantitative","nominal"),
+     standardize = FALSE)
 }
 \arguments{
   \item{ratings}{list of n*m matrices or dataframes with one list element for each variable, n subjects m raters.}
@@ -27,7 +28,7 @@ A list with class '"irrlist"' containing the following components:
 }
 \references{
 Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.
-\crJanson, H., & Olsson, U. (2001). A measure of agreement for interval or nominal multivariate observations. Educational and Psychological Measurement, 61, 277-289.
+\cr\crJanson, H., & Olsson, U. (2001). A measure of agreement for interval or nominal multivariate observations. Educational and Psychological Measurement, 61, 277-289.
 }
 \author{Matthias Gamer}
 \seealso{
