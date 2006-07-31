@@ -30,9 +30,9 @@ function(ratings, fisher=TRUE) {
     coeff <- mean(r)
   }
 
-  rval <- list(method = "Mean of bivariate correlations RØ",
+  rval <- list(method = "Mean of bivariate correlations R",
                subjects = ns, raters = nr,
-               irr.name = "RØ", value = coeff)
+               irr.name = "R", value = coeff)
 
   if (fisher) rval <- c(rval, stat.name = "z", statistic = u, p.value = p.value)
   if (delr>0) rval <- c(rval, error = paste(delr, ifelse(delr==1, "perfect correlation was", "perfect correlations were"), "dropped before averaging"))

@@ -1,6 +1,6 @@
 Package: irr
-Version: 0.61
-Date: 2005-10-11
+Version: 0.62
+Date: 2006-07-31
 Title: Various Coefficients of Interrater Reliability and Agreement
 Author: Matthias Gamer <gamer@uni-mainz.de>
 Depends: R (>= 1.8.0)
@@ -10,4 +10,4 @@ Description: Coefficients of Interrater Reliability and Agreement for
 Maintainer: Matthias Gamer <gamer@uni-mainz.de>
 License: GNU General Public License version 2 or newer
 URL: http://www.r-project.org
-Packaged: Tue Oct 11 11:27:34 2005; gamer
+Packaged: Mon Jul 31 12:18:14 2006; gamer

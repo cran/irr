@@ -38,9 +38,9 @@ function(ratings, fisher=TRUE) {
     coeff <- mean(r)
   }
 
-  rval <- list(method = "Mean of bivariate rank correlations RhoØ",
+  rval <- list(method = "Mean of bivariate rank correlations Rho",
                subjects = ns, raters = nr,
-               irr.name = "RhoØ", value = coeff)
+               irr.name = "Rho", value = coeff)
 
   if (fisher) rval <- c(rval, stat.name = "z", statistic = u, p.value = p.value)
   if (delr>0) {
