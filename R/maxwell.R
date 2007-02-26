@@ -22,7 +22,8 @@ function(ratings) {
     stop("Ratings are not binary")
   }
   
-	levels(r1) <- lev; levels(r2) <- lev
+	r1 <- factor(ratings[,1],levels=lev)
+	r2 <- factor(ratings[,2],levels=lev)
 
   # Compute table
 	ttab <- table(r1, r2)

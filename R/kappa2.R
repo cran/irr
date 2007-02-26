@@ -17,11 +17,15 @@ function(ratings, weight = c("unweighted", "equal", "squared")) {
 	if (!is.factor(r2)) r2 <- factor(r2)
 
 	#Find factor levels
-	if (length(levels(r1)) >= length(levels(r2))) lev <- c(levels(r1), levels(r2))
-	else lev <- c(levels(r2), levels(r1))
+	if (length(levels(r1)) >= length(levels(r2))) {
+    lev <- c(levels(r1), levels(r2))
+  } else { 
+    lev <- c(levels(r2), levels(r1))
+  }
 
 	lev <- lev[!duplicated(lev)]
-	levels(r1) <- lev; levels(r2) <- lev
+	r1 <- factor(ratings[,1],levels=lev)
+	r2 <- factor(ratings[,2],levels=lev)
 
   #Compute table
 	ttab <- table(r1, r2)
