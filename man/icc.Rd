@@ -49,8 +49,8 @@ Bartko, J.J. (1966). The intraclass correlation coefficient as a measure of reli
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[irr]{finn}}
-  \code{\link[irr]{meancor}}
+  \code{\link[irr]{finn}},
+  \code{\link[irr]{meancor}},
   \code{\link[irr]{robinson}}
 }
 \examples{

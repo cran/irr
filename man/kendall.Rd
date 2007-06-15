@@ -33,7 +33,7 @@ Kendall, M.G. (1948). Rank correlation methods. London: Griffin.
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[base]{cor}}
+  \code{\link[base]{cor}},
   \code{\link[irr]{meanrho}}
 }
 \examples{

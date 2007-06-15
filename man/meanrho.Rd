@@ -31,7 +31,7 @@ A list with class '"irrlist"' containing the following components:
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[base]{cor}}
+  \code{\link[base]{cor}},
   \code{\link[irr]{kendall}}
 }
 \examples{

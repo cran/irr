@@ -31,7 +31,7 @@ Conger, A.J. (1980). Integration and generalisation of Kappas for multiple rater
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[irr]{kappa2}}
+  \code{\link[irr]{kappa2}},
   \code{\link[irr]{kappam.fleiss}}
 }
 \examples{

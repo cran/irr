@@ -26,8 +26,8 @@ Robinson, W.S. (1957). The statistical measurement of agreement. American Sociol
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[irr]{finn}}
-  \code{\link[irr]{icc}}
+  \code{\link[irr]{finn}}, 
+  \code{\link[irr]{icc}}, 
   \code{\link[irr]{meancor}}
 }
 \examples{

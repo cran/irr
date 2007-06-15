@@ -2,7 +2,7 @@
 \alias{kappa2}
 \title{Cohen's Kappa and weighted Kappa for two raters}
 \description{
-Computes Cohen's Kappa and weighted Kappa as an index of interrater agreement between 2 raters on categorical (or ordinal) data. Own weights for the various degrees of disagreement could be specified.
+Calculates Cohen's Kappa and weighted Kappa as an index of interrater agreement between 2 raters on categorical (or ordinal) data. Own weights for the various degrees of disagreement could be specified.
 }
 \usage{
 kappa2(ratings, weight = c("unweighted", "equal", "squared"))
@@ -35,8 +35,8 @@ Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[base]{cor}}
-  \code{\link[irr]{kappa2}}
+  \code{\link[base]{cor}},
+  \code{\link[irr]{kappa2}},
   \code{\link[irr]{kappam.light}}
 }
 \examples{

@@ -20,7 +20,7 @@ Judgements couly vary from 1 (not credible) to 6 (highly credible). Variance bet
 artificial data
 }
 \examples{
-data(anxiety)
-apply(anxiety,2,table)
+data(video)
+apply(video,2,table)
 }
 \keyword{datasets}

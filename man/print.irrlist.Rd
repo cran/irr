@@ -16,14 +16,20 @@ print.irrlist(x, ...)
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[irr]{finn}}
-  \code{\link[irr]{kappa2}}
-  \code{\link[irr]{kappam.fleiss}}
-  \code{\link[irr]{kappam.light}}
-  \code{\link[irr]{kendall}}
-  \code{\link[irr]{meancor}}
-  \code{\link[irr]{meanrho}}
-  \code{\link[irr]{robinson}}
+  \code{\link[irr]{bhapkar}}, 
+  \code{\link[irr]{finn}}, 
+  \code{\link[irr]{iota}}, 
+  \code{\link[irr]{kappa2}}, 
+  \code{\link[irr]{kappam.fleiss}}, 
+  \code{\link[irr]{kappam.light}}, 
+  \code{\link[irr]{kripp.alpha}}, 
+  \code{\link[irr]{kendall}}, 
+  \code{\link[irr]{maxwell}}, 
+  \code{\link[irr]{meancor}}, 
+  \code{\link[irr]{meanrho}}, 
+  \code{\link[irr]{rater.bias}}, 
+  \code{\link[irr]{robinson}}, 
+  \code{\link[irr]{stuart.maxwell}}
 }
 \examples{
 data(anxiety)

@@ -25,9 +25,9 @@ A list with class '"irrlist"' containing the following components:
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[irr]{kappa2}}
-  \code{\link[irr]{kappam.fleiss}}
-  \code{\link[irr]{kappam.light}}
+  \code{\link[irr]{kappa2}}, 
+  \code{\link[irr]{kappam.fleiss}}, 
+  \code{\link[irr]{kappam.light}} 
 }
 \examples{
 data(video)

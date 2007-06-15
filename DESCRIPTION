@@ -1,8 +1,10 @@
 Package: irr
-Version: 0.63
-Date: 2007-02-26
+Version: 0.70
+Date: 2007-06-15
 Title: Various Coefficients of Interrater Reliability and Agreement
-Author: Matthias Gamer <gamer@uni-mainz.de>
+Author: Matthias Gamer <gamer@uni-mainz.de>,
+ Jim Lemon <jim@bitwrit.com.au>,
+ Ian Fellows <ifellows@uscd.edu>
 Depends: R (>= 1.8.0)
 Description: Coefficients of Interrater Reliability and Agreement for 
         quantitative, ordinal and nominal data: ICC, Finn-Coefficient, 
@@ -10,4 +12,4 @@ Description: Coefficients of Interrater Reliability and Agreement for
 Maintainer: Matthias Gamer <gamer@uni-mainz.de>
 License: GNU General Public License version 2 or newer
 URL: http://www.r-project.org
-Packaged: Tue Feb 27 09:28:45 2007; gamer
+Packaged: Fri Jun 15 17:32:41 2007; gamer

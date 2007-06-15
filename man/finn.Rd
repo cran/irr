@@ -33,8 +33,8 @@ Finn, R.H. (1970). A note on estimating the reliability of categorical data. Edu
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[irr]{icc}}
-  \code{\link[irr]{meancor}}
+  \code{\link[irr]{icc}}, 
+  \code{\link[irr]{meancor}}, 
   \code{\link[irr]{robinson}}
 }
 \examples{

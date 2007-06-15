@@ -1,5 +1,7 @@
 agree                   Simple and extended percentage agreement
 anxiety                 Anxiety ratings by different raters
+bhapkar                 Bhapkar coefficient of concordance between
+                        raters
 diagnoses               Psychiatric diagnoses provided by different
                         raters
 finn                    Finn coefficient for oneway and twoway models
@@ -11,13 +13,20 @@ kappa2                  Cohen's Kappa and weighted Kappa for two raters
 kappam.fleiss           Fleiss' Kappa for m raters
 kappam.light            Light's Kappa for m raters
 kendall                 Kendall's coefficient of concordance W
+kripp.alpha             Krippendorff's alpha reliability coefficient
 maxwell                 Maxwell's RE coefficient for binary data
 meancor                 Mean of bivariate correlations between raters
 meanrho                 Mean of bivariate rank correlations between
                         raters
+N.cohen.kappa           Sample Size Calculation for Cohen's Kappa
+                        Statistic
 print.icclist           Default printing function for ICC results
 print.irrlist           Default printing function for various
                         coefficients of interrater reliability
+rater.bias              Coefficient of rater bias
 robinson                Robinson's A
+stuart.maxwell.mh       Stuart-Maxwell coefficient of concordance for
+                        two raters
 video                   Different raters judging the credibility of
                         videotaped testimonies
+vision                  Eye-testing case records
