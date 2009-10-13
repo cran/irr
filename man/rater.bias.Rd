@@ -15,8 +15,8 @@ rater.bias(x)
  \code{rater.bias} calculates a reliability coefficient for two raters
   classifying n objects into any number of categories. It will accept either 
   a c x c classification matrix of counts of objects falling into c categories
-  or a 2 x n or n x 2 matrix of classification scores.
- \crThe function returns the absolute value of the triangular off-diagnonal 
+  or a 2 x n or n x 2 matrix of classification scores.\cr
+  The function returns the absolute value of the triangular off-diagnonal 
   sum ratio of the cxc classification table and the corresponding test statistic.
   A systematic bias between raters can be assumed when the ratio substantially 
   deviates from 0.5 while yielding a significant Chi-squared statistic.

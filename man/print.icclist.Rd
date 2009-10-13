@@ -5,7 +5,7 @@
 Prints the results of the ICC computation.
 }
 \usage{
-print.icclist(x, ...)
+  \method{print}{icclist}(x, \dots)
 }
 \arguments{
   \item{x}{a list with class '"icclist"' containing the results of the ICC computation.}

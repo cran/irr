@@ -12,8 +12,8 @@ agree(ratings, tolerance=0)
   \item{tolerance}{number of successive rating categories that should be regarded as rater agreement (see details).}
 }
 \details{
-Missing data are omitted in a listwise way.
-\crUsing extended percentage agreement (tolerance!=0) is only possible for numerical values. If tolerance equals 1, for example, raters differing by one scale degree are interpreted as agreeing.
+Missing data are omitted in a listwise way.\cr
+Using extended percentage agreement (tolerance!=0) is only possible for numerical values. If tolerance equals 1, for example, raters differing by one scale degree are interpreted as agreeing.
 }
 \value{
 A list with class '"irrlist"' containing the following components:

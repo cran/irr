@@ -1,5 +1,8 @@
 Changes in 0.x releases of irr:
 =======
+ 0.80: - The function relInterIntra was included (Thanks to Tore Wentzel-Larsen
+         for providing this function)
+       - An error in the function N.cohen.kappa was corrected
  0.70: - The following functions from the concord package were included:
          kripp.alpha (Krippendorff's alpha), rater.bias (test of bias 
          between two raters) and stuart.maxwell.mh (Stuart-Maxwell marginal 

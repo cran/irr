@@ -12,9 +12,9 @@ kappa2(ratings, weight = c("unweighted", "equal", "squared"))
   \item{weight}{either a character string specifying one predifined set of weights or a numeric vector with own weights (see details).}
 }
 \details{
-Missing data are omitted in a listwise way.
-\crDuring computation, the diagnoses are converted to factors. Therefore, the categories are ordered accordingly.
-\crBeneath '"unweighted"' (default), predifined sets of weights are '"equal"' (all levels disagreement between raters are weighted equally) and '"squared"' (disagreements are weighted according to their squared distance from perfect agreement). The weighted Kappa coefficient with '"squared"' weights equals the product moment correlation under certain conditions.
+Missing data are omitted in a listwise way.\cr
+During computation, the diagnoses are converted to factors. Therefore, the categories are ordered accordingly.\cr
+Beneath '"unweighted"' (default), predifined sets of weights are '"equal"' (all levels disagreement between raters are weighted equally) and '"squared"' (disagreements are weighted according to their squared distance from perfect agreement). The weighted Kappa coefficient with '"squared"' weights equals the product moment correlation under certain conditions.
 Own weights could be specified by supplying the function with a numeric vector of weights, starting from perfect agreement to worst disagreement. The length of this vector must equal the number of rating categories.
 }
 \value{
@@ -29,13 +29,13 @@ A list with class '"irrlist"' containing the following components:
   \item{$p.value}{the p-value for the test.}
 }
 \references{
-Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20, 37-46.
-\cr\crCohen, J. (1968). Weighted kappa: Nominal scale agreement with provision for scaled disagreement or partial credit. Psychological Bulletin, 70, 213-220.
-\cr\crFleiss, J.L., Cohen, J., & Everitt, B.S. (1969). Large sample standard errors of kappa and weighted kappa. Psychological Bulletin, 72, 323-327.
+Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20, 37-46.\cr\cr
+Cohen, J. (1968). Weighted kappa: Nominal scale agreement with provision for scaled disagreement or partial credit. Psychological Bulletin, 70, 213-220.\cr\cr
+Fleiss, J.L., Cohen, J., & Everitt, B.S. (1969). Large sample standard errors of kappa and weighted kappa. Psychological Bulletin, 72, 323-327.
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[base]{cor}},
+  \code{\link[stats]{cor}},
   \code{\link[irr]{kappa2}},
   \code{\link[irr]{kappam.light}}
 }

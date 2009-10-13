@@ -11,8 +11,8 @@ kappam.light(ratings)
   \item{ratings}{n*m matrix or dataframe, n subjects m raters.}
 }
 \details{
-Missing data are omitted in a listwise way.
-\crLight's Kappa equals the average of all possible combinations of bivariate Kappas between raters.
+Missing data are omitted in a listwise way.\cr
+Light's Kappa equals the average of all possible combinations of bivariate Kappas between raters.
 }
 \value{
 A list with class '"irrlist"' containing the following components:
@@ -26,8 +26,8 @@ A list with class '"irrlist"' containing the following components:
   \item{$p.value}{the p-value for the test.}
 }
 \references{
-Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.
-\cr\crLight, R.J. (1971). Measures of response agreement for qualitative data: Some generalizations and alternatives. Psychological Bulletin, 76, 365-377.
+Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.\cr\cr
+Light, R.J. (1971). Measures of response agreement for qualitative data: Some generalizations and alternatives. Psychological Bulletin, 76, 365-377.
 }
 \author{Matthias Gamer}
 \seealso{

@@ -12,10 +12,10 @@ meanrho(ratings, fisher = TRUE)
   \item{fisher}{a logical indicating whether the correlation coefficients should be Fisher z-standardized before averaging.}
 }
 \details{
-Missing data are omitted in a listwise way.
-\crThe mean of bivariate rank correlations should not be used as an index of interrater reliability when ties within raters occur.
-\crThe null hypothesis r=0 could only be tested when Fisher z-standardized values are used for the averaging.
-\crWhen computing Fisher z-standardized values, perfect correlations are omitted before averaging because z equals +/-Inf in that case.
+Missing data are omitted in a listwise way.\cr
+The mean of bivariate rank correlations should not be used as an index of interrater reliability when ties within raters occur.\cr
+The null hypothesis r=0 could only be tested when Fisher z-standardized values are used for the averaging.\cr
+When computing Fisher z-standardized values, perfect correlations are omitted before averaging because z equals +/-Inf in that case.
 }
 \value{
 A list with class '"irrlist"' containing the following components:
@@ -31,7 +31,7 @@ A list with class '"irrlist"' containing the following components:
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[base]{cor}},
+  \code{\link[stats]{cor}},
   \code{\link[irr]{kendall}}
 }
 \examples{

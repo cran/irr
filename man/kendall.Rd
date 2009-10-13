@@ -12,9 +12,9 @@ kendall(ratings, correct = FALSE)
   \item{correct}{a logical indicating whether the coefficient should be corrected for ties within raters.}
 }
 \details{
-Missing data are omitted in a listwise way.
-\crKendall's W should be corrected for ties if raters did not use a true ranking order for the subjects.
-\crA test for the significance of Kendall's W is only valid for large samples. 
+Missing data are omitted in a listwise way.\cr
+Kendall's W should be corrected for ties if raters did not use a true ranking order for the subjects.\cr
+A test for the significance of Kendall's W is only valid for large samples. 
 }
 \value{
 A list with class '"irrlist"' containing the following components:
@@ -33,7 +33,7 @@ Kendall, M.G. (1948). Rank correlation methods. London: Griffin.
 }
 \author{Matthias Gamer}
 \seealso{
-  \code{\link[base]{cor}},
+  \code{\link[stats]{cor}},
   \code{\link[irr]{meanrho}}
 }
 \examples{

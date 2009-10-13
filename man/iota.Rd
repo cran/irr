@@ -14,8 +14,8 @@ iota(ratings, scaledata = c("quantitative","nominal"),
   \item{standardize}{a logical indicating whether quantitative data should be z-standardized within each variable before the computation of iota.}
 }
 \details{
-Each list element must contain observations for each rater and subject without missing values.
-\crIn case of one categorical variable (only one list element), iota reduces to the Fleiss exact kappa coefficient, which was proposed by Conger (1980).
+Each list element must contain observations for each rater and subject without missing values.\cr
+In case of one categorical variable (only one list element), iota reduces to the Fleiss exact kappa coefficient, which was proposed by Conger (1980).
 }
 \value{
 A list with class '"irrlist"' containing the following components:
@@ -27,8 +27,8 @@ A list with class '"irrlist"' containing the following components:
   \item{$detail}{a character string specifying if the values were z-standardized before the computation of iota.}
 }
 \references{
-Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.
-\cr\crJanson, H., & Olsson, U. (2001). A measure of agreement for interval or nominal multivariate observations. Educational and Psychological Measurement, 61, 277-289.
+Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.\cr\cr
+Janson, H., & Olsson, U. (2001). A measure of agreement for interval or nominal multivariate observations. Educational and Psychological Measurement, 61, 277-289.
 }
 \author{Matthias Gamer}
 \seealso{

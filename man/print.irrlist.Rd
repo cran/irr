@@ -5,7 +5,7 @@
 Prints the results of various functions computing coefficients of interrater reliability.
 }
 \usage{
-print.irrlist(x, ...)
+  \method{print}{irrlist}(x, \dots)
 }
 \arguments{
   \item{x}{a list with class '"irrlist"' containing the results of the interrater reliability computation.}

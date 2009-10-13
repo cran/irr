@@ -13,9 +13,9 @@ kappam.fleiss(ratings, exact = FALSE, detail = FALSE)
   \item{detail}{a logical indicating whether category-wise Kappas should be computed}
 }
 \details{
-Missing data are omitted in a listwise way.
-\crThe coefficient described by Fleiss (1971) does not reduce to Cohen's Kappa (unweighted) for m=2 raters. Therefore, the exact Kappa coefficient, which is slightly higher in most cases, was proposed by Conger (1980).
-\crThe null hypothesis Kappa=0 could only be tested using Fleiss' formulation of Kappa.
+Missing data are omitted in a listwise way.\cr
+The coefficient described by Fleiss (1971) does not reduce to Cohen's Kappa (unweighted) for m=2 raters. Therefore, the exact Kappa coefficient, which is slightly higher in most cases, was proposed by Conger (1980).\cr
+The null hypothesis Kappa=0 could only be tested using Fleiss' formulation of Kappa.
 }
 \value{
 A list with class '"irrlist"' containing the following components:
@@ -30,9 +30,9 @@ A list with class '"irrlist"' containing the following components:
   \item{$detail}{a table with category-wise kappas and the corresponding test statistics.}
 }
 \references{
-Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.
-\cr\crFleiss, J.L. (1971). Measuring nominal scale agreement among many raters. Psychological Bulletin, 76, 378-382.
-\cr\crFleiss, J.L., Levin, B., & Paik, M.C. (2003). Statistical Methods for Rates and Proportions, 3rd Edition. New York: John Wiley & Sons.
+Conger, A.J. (1980). Integration and generalisation of Kappas for multiple raters. Psychological Bulletin, 88, 322-328.\cr\cr
+Fleiss, J.L. (1971). Measuring nominal scale agreement among many raters. Psychological Bulletin, 76, 378-382.\cr\cr
+Fleiss, J.L., Levin, B., & Paik, M.C. (2003). Statistical Methods for Rates and Proportions, 3rd Edition. New York: John Wiley & Sons.
 }
 \author{Matthias Gamer}
 \seealso{

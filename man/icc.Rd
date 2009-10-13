@@ -18,11 +18,11 @@ icc(ratings, model = c("oneway", "twoway"),
   \item{conf.level}{confidence level of the interval.}
 }
 \details{
-Missing data are omitted in a listwise way.
-\crWhen considering which form of ICC is appropriate for an actual set of data, one has take several decisions (Shrout & Fleiss, 1979):
-\cr\cr1. Should only the subjects be considered as random effects ('"oneway"' model) or are subjects and raters randomly chosen from a bigger pool of persons ('"twoway"' model).
-\cr\cr2. If differences in judges' mean ratings are of interest, interrater '"agreement"' instead of '"consistency"' should be computed.
-\cr\cr3. If the unit of analysis is a mean of several ratings, unit should be changed to '"average"'. In most cases, however, single values (unit='"single"') are regarded.
+Missing data are omitted in a listwise way.\cr
+When considering which form of ICC is appropriate for an actual set of data, one has take several decisions (Shrout & Fleiss, 1979):\cr\cr
+1. Should only the subjects be considered as random effects ('"oneway"' model) or are subjects and raters randomly chosen from a bigger pool of persons ('"twoway"' model).\cr\cr
+2. If differences in judges' mean ratings are of interest, interrater '"agreement"' instead of '"consistency"' should be computed.\cr\cr
+3. If the unit of analysis is a mean of several ratings, unit should be changed to '"average"'. In most cases, however, single values (unit='"single"') are regarded.
 }
 \value{
 A list with class '"icclist"' containing the following components:
@@ -43,9 +43,9 @@ A list with class '"icclist"' containing the following components:
   \item{$ubound}{the upper bound of the confidence interval.}
 }
 \references{
-Bartko, J.J. (1966). The intraclass correlation coefficient as a measure of reliability. Psychological Reports, 19, 3-11.
-\cr\crMcGraw, K.O., & Wong, S.P. (1996), Forming inferences about some intraclass correlation coefficients. Psychological Methods, 1, 30-46.
-\cr\crShrout, P.E., & Fleiss, J.L. (1979), Intraclass correlation: uses in assessing rater reliability. Psychological Bulletin, 86, 420-428.
+Bartko, J.J. (1966). The intraclass correlation coefficient as a measure of reliability. Psychological Reports, 19, 3-11.\cr\cr
+McGraw, K.O., & Wong, S.P. (1996), Forming inferences about some intraclass correlation coefficients. Psychological Methods, 1, 30-46.\cr\cr
+Shrout, P.E., & Fleiss, J.L. (1979), Intraclass correlation: uses in assessing rater reliability. Psychological Bulletin, 86, 420-428.
 }
 \author{Matthias Gamer}
 \seealso{
