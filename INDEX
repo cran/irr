@@ -13,7 +13,8 @@ kappa2                  Cohen's Kappa and weighted Kappa for two raters
 kappam.fleiss           Fleiss' Kappa for m raters
 kappam.light            Light's Kappa for m raters
 kendall                 Kendall's coefficient of concordance W
-kripp.alpha             Krippendorff's alpha reliability coefficient
+kripp.alpha             calculate Krippendorff's alpha reliability
+                        coefficient
 maxwell                 Maxwell's RE coefficient for binary data
 meancor                 Mean of bivariate correlations between raters
 meanrho                 Mean of bivariate rank correlations between

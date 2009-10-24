@@ -2,7 +2,7 @@
 \alias{relInterIntra}
 \title{Inter- and intra-rater reliability}
 \usage{
- relInterIntra(x, nrater=1, raterLabels=NULL, rho0inter=0.6, 
+ relInterIntra(x, nrater=1, raterLabels=NULL, rho0inter=0.6,
                rho0intra=0.8, conf.level=.95)
 }
 \arguments{
@@ -18,7 +18,9 @@
 }
 \value{nil}
 \author{Tore Wentzel-Larsen}
-\references{Eliasziw et. al. 1994; Phys. Therapy 74.8; 777-788.}
+\references{
+Eliasziw, M., Young, S.L., Woodbury, M.G., & Fryday-Field, K. (1994). Statistical methodology for the concurrent assessment of interrater and intrarater reliability: Using goniometric measurements as an example. Physical Therapy, 74, 777-788.
+}
 \examples{
 # testing code for the Goniometer data from the article:
  table4<-matrix(c(

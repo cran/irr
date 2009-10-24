@@ -8,8 +8,8 @@
  acceptable (i.e. Kappa=0 is a valid null hypothesis).
 }
 \usage{
- N.cohen.kappa(rate1, rate2, kappa, hypokappa, power=.8, alpha=.05, 
-               twosided=FALSE)
+ N.cohen.kappa(rate1, rate2, kappa, hypokappa, power=.8,
+               alpha=.05, twosided=FALSE)
 }
 
 \arguments{

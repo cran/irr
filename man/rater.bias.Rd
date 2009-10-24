@@ -32,8 +32,7 @@ rater.bias(x)
  \item{p.value}{the probability of the df 1 Chi-square variable}
 }
 \references{
- Bishop Y.M.M., Fienberg S.E., & Holland P.W. (1978) Discrete multivariate 
- analysis: theory and practice. Cambridge, Massachusetts: MIT Press.
+ Bishop Y.M.M., Fienberg S.E., & Holland P.W. (1978). Discrete multivariate analysis: theory and practice. Cambridge, Massachusetts: MIT Press.
 }
 \author{Jim Lemon}
 \seealso{

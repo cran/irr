@@ -4,7 +4,7 @@
 \title{Different raters judging the credibility of videotaped testimonies}
 \description{
 The data frame contains the credibility ratings of 20 subjects, rated by 4 raters.
-Judgements couly vary from 1 (not credible) to 6 (highly credible). Variance between and within raters is low.
+Judgements could vary from 1 (not credible) to 6 (highly credible). Variance between and within raters is low.
 }
 \usage{data(video)}
 \format{

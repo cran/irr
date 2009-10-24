@@ -29,11 +29,8 @@ stuart.maxwell.mh(x)
  \item{$p.value}{the probability of the test statistic.}
 }
 \references{
- Stuart A.A. (1955) A test for homogeneity of the marginal 
- distributions in a two-way classification. Biometrika, 42, 412-416.
- 
- Maxwell A.E. (1970) Comparing the classification of subjects by two 
- independent judges. British Journal of Psychiatry, 116, 651-655.
+ Stuart, A.A. (1955). A test for homogeneity of the marginal distributions in a two-way classification. Biometrika, 42, 412-416.\cr\cr
+ Maxwell, A.E. (1970) Comparing the classification of subjects by two independent judges. British Journal of Psychiatry, 116, 651-655.
 }
 \author{Jim Lemon}
 \seealso{

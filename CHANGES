@@ -1,5 +1,6 @@
 Changes in 0.x releases of irr:
 =======
+ 0.81: - An error in the function kripp.alpha was corrected
  0.80: - The function relInterIntra was included (Thanks to Tore Wentzel-Larsen
          for providing this function)
        - An error in the function N.cohen.kappa was corrected
