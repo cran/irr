@@ -14,7 +14,7 @@ icc(ratings, model = c("oneway", "twoway"),
   \item{model}{a character string specifying if a '"oneway"' model (default) with row effects random, or a '"twoway"' model with column and row effects random should be applied. You can specify just the initial letter.}
   \item{type}{a character string specifying if '"consistency"' (default) or '"agreement"' between raters should be estimated. If a '"oneway"' model is used, only '"consistency"' could be computed. You can specify just the initial letter.}
   \item{unit}{a character string specifying the unit of analysis: Must be one of '"single"' (default) or '"average"'. You can specify just the initial letter.}
-  \item{r0}{specification of the null hypothesis r = r0.}
+  \item{r0}{specification of the null hypothesis r = r0. Note that a one sided test (H1: r > r0) is performed.}
   \item{conf.level}{confidence level of the interval.}
 }
 \details{

@@ -1,5 +1,8 @@
 Changes in 0.x releases of irr:
 =======
+ 0.82: - An error in the function icc was corrected. The old function returned
+         p-values bigger than 1 for very low icc estimates.
+         (Thanks to Elmar Kisslinger for raising this issue)
  0.81: - An error in the function kripp.alpha was corrected
  0.80: - The function relInterIntra was included (Thanks to Tore Wentzel-Larsen
          for providing this function)

@@ -1,6 +1,6 @@
 Package: irr
-Version: 0.81
-Date: 2009-10-24
+Version: 0.82
+Date: 2009-11-10
 Title: Various Coefficients of Interrater Reliability and Agreement
 Author: Matthias Gamer <m.gamer@uke.uni-hamburg.de>, Jim Lemon
         <jim@bitwrit.com.au>, Ian Fellows <ifellows@uscd.edu>
@@ -11,6 +11,6 @@ Description: Coefficients of Interrater Reliability and Agreement for
         Robinson'A, Kendall's W, Cohen's Kappa, ...
 License: GPL (>= 2)
 URL: http://www.r-project.org
-Packaged: 2009-10-24 13:04:28 UTC; Matthias
+Packaged: 2009-11-10 10:02:38 UTC; gamer
 Repository: CRAN
-Date/Publication: 2009-10-26 19:27:33
+Date/Publication: 2009-11-10 10:43:11

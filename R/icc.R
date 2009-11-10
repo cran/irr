@@ -28,7 +28,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 		    Fvalue <- MSr/MSw*((1-r0)/(1+(nr-1)*r0))
 		    df1    <- ns-1
 		    df2    <- ns*(nr-1)
-		    p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
+		    p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)
 
 		    #confidence interval
 		    FL <- (MSr/MSw)/qf(1-alpha/2, ns-1, ns*(nr-1))
@@ -48,7 +48,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 			  Fvalue <- MSr/MSe*((1-r0)/(1+(nr-1)*r0))
 			  df1    <- ns-1
 			  df2    <- (ns-1)*(nr-1)
-			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
+			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)
 
 			  #confidence interval
 			  FL <- (MSr/MSe)/qf(1-alpha/2, ns-1, (ns-1)*(nr-1))
@@ -76,7 +76,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 
 			  df1     <- ns-1
 			  df2     <- v
-			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
+			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)
 
 			  #confidence interval (McGraw & Wong, 1996)
 				FL <- qf(1-alpha/2, ns-1, v)
@@ -96,7 +96,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 		    Fvalue <- MSr/MSw*(1-r0)
 		    df1    <- ns-1
 		    df2    <- ns*(nr-1)
-		    p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
+		    p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)
 
 		    #confidence interval
 		    FL <- (MSr/MSw)/qf(1-alpha/2, ns-1, ns*(nr-1))
@@ -113,7 +113,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 			  Fvalue <- MSr/MSe*(1-r0)
 			  df1    <- ns-1
 			  df2    <- (ns-1)*(nr-1)
-			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
+			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)
 
 			  #confidence interval
 			  FL <- (MSr/MSe)/qf(1-alpha/2, ns-1, (ns-1)*(nr-1))
@@ -137,7 +137,7 @@ function(ratings, model = c("oneway", "twoway"), type = c("consistency", "agreem
 
 			  df1    <- ns-1
 			  df2    <- v
-			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)*2
+			  p.value <- pf(Fvalue, df1, df2, lower.tail=FALSE)
 
 			  #confidence interval (McGraw & Wong, 1996)
 				FL <- qf(1-alpha/2, ns-1, v)

@@ -9,7 +9,7 @@ function(x, ...)
 	cat(paste("     Raters =", x$raters, "\n"))
 	results <- paste(formatC(x$icc.name, width=11, flag="+"), "=", format(x$value, digits=3))
 	cat(results)
-  cat("\n\n F-Test, H0: r0 =",x$r0,"\n")
+  cat("\n\n F-Test, H0: r0 =",x$r0, "; H1: r0 >",x$r0,"\n")
 	Ftest <- paste(formatC(paste("F(",x$df1,",",format(x$df2, digits=3),")",sep=""), width=11, flag="+"), "=",
                                               format(x$Fvalue, digits=3),
 	               ", p =", format(x$p.value, digits=3), "\n\n")
