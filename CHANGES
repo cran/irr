@@ -1,5 +1,7 @@
 Changes in 0.x releases of irr:
 =======
+ 0.83: - The function N2.cohen.kappa was included (Thanks to Puspendra Singh
+         for providing this function)
  0.82: - An error in the function icc was corrected. The old function returned
          p-values bigger than 1 for very low icc estimates.
          (Thanks to Elmar Kisslinger for raising this issue)

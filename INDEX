@@ -21,6 +21,8 @@ meanrho                 Mean of bivariate rank correlations between
                         raters
 N.cohen.kappa           Sample Size Calculation for Cohen's Kappa
                         Statistic
+N2.cohen.kappa          Sample Size Calculation for Cohen's Kappa
+                        Statistic with more than one category
 print.icclist           Default printing function for ICC results
 print.irrlist           Default printing function for various
                         coefficients of interrater reliability
