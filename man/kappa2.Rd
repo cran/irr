@@ -5,16 +5,17 @@
 Calculates Cohen's Kappa and weighted Kappa as an index of interrater agreement between 2 raters on categorical (or ordinal) data. Own weights for the various degrees of disagreement could be specified.
 }
 \usage{
-kappa2(ratings, weight = c("unweighted", "equal", "squared"))
+kappa2(ratings, weight = c("unweighted", "equal", "squared"), sort.levels = FALSE)
 }
 \arguments{
   \item{ratings}{n*2 matrix or dataframe, n subjects 2 raters.}
   \item{weight}{either a character string specifying one predifined set of weights or a numeric vector with own weights (see details).}
+  \item{sort.levels}{boolean value describing whether factor levels should be (re-)sorted during the calculation.}
 }
 \details{
 Missing data are omitted in a listwise way.\cr
-During computation, the diagnoses are converted to factors. Therefore, the categories are ordered accordingly.\cr
-Beneath '"unweighted"' (default), predifined sets of weights are '"equal"' (all levels disagreement between raters are weighted equally) and '"squared"' (disagreements are weighted according to their squared distance from perfect agreement). The weighted Kappa coefficient with '"squared"' weights equals the product moment correlation under certain conditions.
+During computation, ratings are converted to factors. Therefore, the categories are ordered accordingly. When ratings are numeric, a sorting of factor levels occurs automatically. Otherwise, levels are sorted when the function is called with sort.levels=TRUE. \cr
+\code{kappa2} allows for calculating weighted Kappa coefficients. Beneath '"unweighted"' (default), predifined sets of weights are '"equal"' (all levels disagreement between raters are weighted equally) and '"squared"' (disagreements are weighted according to their squared distance from perfect agreement). The weighted Kappa coefficient with '"squared"' weights equals the product moment correlation under certain conditions.
 Own weights could be specified by supplying the function with a numeric vector of weights, starting from perfect agreement to worst disagreement. The length of this vector must equal the number of rating categories.
 }
 \value{

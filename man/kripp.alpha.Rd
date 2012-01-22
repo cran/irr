@@ -11,8 +11,6 @@
   \item{x}{classifier x object matrix of classifications or scores}
   \item{method}{data level of x}
 }
-\details{
-}
 \value{
  A list with class '"irrlist"' containing the following components: 
  \item{$method}{a character string describing the method.}
@@ -37,7 +35,6 @@
 \note{Krippendorff's alpha coefficient is particularly useful where
  the level of measurement of classification data is higher than nominal
  or ordinal.}
-\seealso{}
 \examples{
  # the "C" data from Krippendorff
  nmm<-matrix(c(1,1,NA,1,2,2,3,2,3,3,3,3,3,3,3,3,2,2,2,2,1,2,3,4,4,4,4,4,

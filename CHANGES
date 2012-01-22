@@ -1,5 +1,11 @@
 Changes in 0.x releases of irr:
 =======
+ 0.84: - An error in the function kripp.alpha was corrected. The old function 
+         returned an error when raters showed perfect agreement. (Thanks to 
+         Steve Mooney for raising this issue). The function kappa2 now 
+         allows for sorting factor levels which becomes important when one
+         rater does not use the same rating categories as the other one.
+         (Thanks to Sarah Barry for pointing this out). 
  0.83: - The function N2.cohen.kappa was included (Thanks to Puspendra Singh
          for providing this function)
  0.82: - An error in the function icc was corrected. The old function returned

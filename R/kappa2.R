@@ -1,5 +1,5 @@
 "kappa2" <-
-function(ratings, weight = c("unweighted", "equal", "squared")) {
+function(ratings, weight = c("unweighted", "equal", "squared"), sort.levels = FALSE) {
 	ratings <- as.matrix(na.omit(ratings))
 	if (is.character(weight))
         weight = match.arg(weight)
@@ -13,6 +13,8 @@ function(ratings, weight = c("unweighted", "equal", "squared")) {
 
 	r1 <- ratings[,1]; r2 <- ratings[,2]
 
+	if ((is.numeric(r1)) | (is.numeric(r2))) sort.levels <- TRUE
+	
 	if (!is.factor(r1)) r1 <- factor(r1)
 	if (!is.factor(r2)) r2 <- factor(r2)
 
@@ -23,6 +25,7 @@ function(ratings, weight = c("unweighted", "equal", "squared")) {
     lev <- c(levels(r2), levels(r1))
   }
 
+	if (sort.levels) lev <- sort(lev)
 	lev <- lev[!duplicated(lev)]
 	r1 <- factor(ratings[,1],levels=lev)
 	r2 <- factor(ratings[,2],levels=lev)
