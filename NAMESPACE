@@ -8,3 +8,9 @@ exportPattern(".")
 import(
   lpSolve
 )
+
+importFrom("stats", "aov", "cor", "na.omit", "pchisq", "pf", "pnorm",
+           "qf", "qnorm", "sd", "var")
+
+S3method(print, icclist)
+S3method(print, irrlist)

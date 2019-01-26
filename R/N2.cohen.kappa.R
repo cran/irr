@@ -45,12 +45,6 @@ N2.cohen.kappa <- function(mrg, k1, k0, alpha=0.05, power=0.8, twosided=FALSE)
   
   # ****************************************************
   # N2.cohen.kappa function
-  # check for the required package
-	if(!require("lpSolve"))
-  		{stop("Package `lpSolve' is required and must be installed.\n 
-       See help(install.packages) or write the following command at prompt
-       and then follow the instructions:\n
-       > install.packages(\"lpSolve\")", call.=FALSE) }
 	if(any(mrg<0)) stop("Atleast one marginal probability is negative", call.=FALSE)
 	if(abs(k0)>1)  stop("Invalid Value for Kappa under H0", call.=FALSE)
 	if(abs(k1)>1)  stop("Invalid Value for Kappa under H1", call.=FALSE)

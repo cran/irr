@@ -1,8 +1,8 @@
 e001d82af1343e37adcc509c97c49517 *CHANGES
-f3402131170666147909bd285321f55c *DESCRIPTION
-26ac59746205c9b8175612833c1a6a76 *NAMESPACE
+bbe12fbab5dec858e11f751250b609e5 *DESCRIPTION
+8b01b90d7a62687872cf8f33b6fcc63f *NAMESPACE
 e6b09d52b7dad8e43ff632cd75f31df4 *R/N.cohen.kappa.R
-252d2276005816de41c238ebce348b2b *R/N2.cohen.kappa.R
+3e83ad25a9d8cdca0c74c3224afc076b *R/N2.cohen.kappa.R
 4df915c9fda19404ba53a39b4c5d2ce6 *R/agree.R
 fb7a679f6109fb5bc64662ce00e51798 *R/bhapkar.r
 c76869bad15e63e07dd0e05c0b88a7d3 *R/finn.R
@@ -22,10 +22,10 @@ ad44f5847360e454d9db79650d29b791 *R/print.irrlist.R
 2eeb83739a21a6f044da5499dd8fb891 *R/relInterIntra.R
 9bd6714707f12956a52a3476271624b7 *R/robinson.R
 8d1acfc727309738665e2a7a312881fe *R/stuart.maxwell.R
-0f0335e6f7ec9da5f3f747c3ce3c6d9e *data/anxiety.rda
-fd1cb9aebb767a0e1be7ed9fa10bc62c *data/diagnoses.rda
-4858af28416f637de53c348daeb9b1bf *data/video.rda
-d8a01cdde1c03704c42d834cee919917 *data/vision.rda
+9cec46375b86b0ebf258c75318490e24 *data/anxiety.rda
+6f8bae866853d87e5b25de2faf841bb9 *data/diagnoses.rda
+3b8a5ff158dc0872289e77aa54c4ccde *data/video.rda
+501811bf287535e40c5124c34891878d *data/vision.rda
 5fd7e664a8bf28614ce64f846797108b *man/N.cohen.kappa.Rd
 5542c8d7cba62a0871adbe6f39d8104e *man/N2.cohen.kappa.Rd
 4b374cfe6ec7d44b2ae8a816374d4c79 *man/agree.Rd
